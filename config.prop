@@ -1,0 +1,4 @@
+sid=XE
+port=1521
+server=10.200.254.134
+dblink=@OLDBANK
