@@ -1,0 +1,32 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="ImageLoader">
+    <output-path>$PROJECT_DIR$/out/artifacts/ImageLoader</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="sample.Main" />
+        <option name="convertCss2Bin" value="true" />
+        <option name="description" value="" />
+        <option name="height" value="768" />
+        <option name="htmlParamFile" value="" />
+        <option name="paramFile" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="width" value="1024" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="ImageLoader.jar">
+        <element id="module-output" name="ImageLoader" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/save.prop" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.prop" />
+      <element id="directory" name="icons">
+        <element id="file-copy" path="$PROJECT_DIR$/src/icons/login.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/src/icons/upload.png" />
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

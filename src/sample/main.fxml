@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import java.lang.String?>
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="300.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.Controller">
+    <children>
+        <!--<Label fx:id="Photo" layoutX="200" layoutY="150"-->
+               <!--prefHeight="30.5" prefWidth="159.0"/>-->
+        <GridPane fx:id="Pane" layoutX="200" layoutY="120"
+               prefHeight="100.0" prefWidth="100.0"/>
+        <!--<ProgressIndicator fx:id="progress" layoutX="200" layoutY="120"-->
+                  <!--prefHeight="100.0" prefWidth="100.0"/>-->
+        <Label fx:id="typeLabel" layoutX="25" layoutY="5"
+                   prefHeight="30.5" prefWidth="170.0" text="Тип документа"/>
+        <ComboBox fx:id="TypeDoc" layoutX="25" layoutY="40"
+                  prefHeight="30.5" prefWidth="159.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="ПАСПОРТ" fx:id="PASSPORT" />
+                    <String fx:value="ПОДПИСЬ" fx:id="SIGN" />
+                    <String fx:value="ФОТО" fx:id="PHOTO" />
+                    <String fx:value="ДОВЕРЕННОСТЬ" fx:id="PROXY" />
+                </FXCollections>
+            </items>
+            <value>
+                <String fx:value="ПАСПОРТ" fx:id="PASSPORT"  />
+            </value>
+        </ComboBox>
+        <Label fx:id="userIdLabel" layoutX="25" layoutY="80"
+               prefHeight="30.5" prefWidth="119.0" text="Введите ID "/>
+        <Button fx:id="Check" layoutX="130.0" layoutY="110" mnemonicParsing="false" onAction="#Check"
+                prefHeight="30.5" prefWidth="70" text="Найти" />
+        <TextField fx:id="clientId" layoutX="25.0" layoutY="110"
+                prefHeight="30.5" prefWidth="100.0"/>
+        <Label fx:id="FIO" layoutX="25" layoutY="150"
+               prefHeight="12" prefWidth="200.0"/>
+        <Label fx:id="commentLabel" layoutX="200" layoutY="5"
+               prefHeight="30.5" prefWidth="170.0" text="Коментарий"/>
+        <Button fx:id="Chose" layoutX="25.0" layoutY="190" mnemonicParsing="false" onAction="#Chose"
+                prefHeight="43.5" prefWidth="159.0" text="Изображение"/>
+        <Button fx:id="Load" layoutX="25.0" layoutY="250" mnemonicParsing="false" onAction="#Load"
+                prefHeight="43.5" prefWidth="159.0" text="Загрузить" disable="true"/>
+        <TextArea fx:id="commentText" layoutX="200.0" layoutY="35"
+                   prefHeight="70" prefWidth="245.0" wrapText="true"/>
+    </children>
+</AnchorPane>

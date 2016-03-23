@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ImageLoader.jnlp">
+  <information>
+    <title>ImageLoader</title>
+    <vendor>Unknown</vendor>
+    <description>ImageLoader</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ImageLoader.jar" size="72046" download="eager" />
+    <jar href="lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar" size="22335" download="eager" />
+    <jar href="lib/commons-logging-api-1.0.4.jar" size="26202" download="eager" />
+    <jar href="lib/edtftpj.jar" size="205131" download="eager" />
+    <jar href="lib/h2-1.3.161.jar" size="1259379" download="eager" />
+    <jar href="lib/java-unrar-0.5.jar" size="136217" download="eager" />
+    <jar href="lib/ojdbc6.jar" size="2152051" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="1024" height="768" main-class="sample.Main"  name="ImageLoader" />
+  <update check="background"/>
+</jnlp>
