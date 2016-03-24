@@ -245,8 +245,8 @@ public class Controller {
                     }
                 } catch (SQLException ignored) {
                     JOptionPane.showMessageDialog(null, "Клиент с таким айди не найден! ORA-0" + ignored.getErrorCode() +" "+ ignored.getMessage());
-                    if (ignored.getErrorCode() == 1017) {
-                        JOptionPane.showMessageDialog(null, "Срок действия вашего пароля истек. Измените пароль");
+                    if (ignored.getErrorCode() == 28001) {
+                        JOptionPane.showMessageDialog(null, "Срок действия вашего пароля истек. Измените пароль в Навигаторе");
                     }
                     Load.setDisable(true);
                     FIO.setText("");
@@ -279,8 +279,8 @@ public class Controller {
                     }
                 } catch (SQLException ignored) {
                     JOptionPane.showMessageDialog(null, "Доверенность с таким айди не найдена! ORA-0" + ignored.getErrorCode()  +" "+ ignored.getMessage());
-                    if (ignored.getErrorCode() == 1017) {
-                        JOptionPane.showMessageDialog(null, "Срок действия вашего пароля истек. Измените пароль");
+                    if (ignored.getErrorCode() == 28001) {
+                        JOptionPane.showMessageDialog(null, "Срок действия вашего пароля истек. Измените пароль в Навигаторе");
                     }
                     Load.setDisable(true);
                     FIO.setText("");
